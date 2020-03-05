@@ -1,88 +1,87 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="zh-CN">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML>
+<html>
 <head>
-<!-- 头部 -->
-<%-- <%@include file="/WEB-INF/jsp/include/header.jsp"%> --%>
-<!-- 头部 -->
-
-<style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: #535a6c;
-      }
-
-      .form-signin {
-        width: 100%;
-        max-width: 330px;
-        padding: 15px;
-        margin: auto;
-      }
-      .form-signin .checkbox {
-        font-weight: 400;
-      }
-      .form-signin .form-control {
-        position: relative;
-        box-sizing: border-box;
-        height: auto;
-        padding: 10px;
-        font-size: 16px;
-      }
-      .form-signin .form-control:focus {
-        z-index: 2;
-      }
-      .form-signin input[name="username"] {
-        margin-bottom: -1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-      .form-signin input[name="password"] {
-        margin-bottom: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-
-      .form-signin p, .form-signin h1 { color:white; }
-
-      .form-signin p{margin-top: 50px;}
-
-      .error {color:red;}
-</style>
-
-<title>嘻嘻</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>展示一下</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+    body{padding:50px;}
+    </style>
 </head>
-<body class="text-center">
-    <form class="form-signin" action="${path }/login" method="post">
-        <img class="mb-4" src="${path }/images/logo.png" alt="" width="136" height="49">
-        <h1 class="h3 mb-3 font-weight-normal">请登录</h1>
-        <label for="username" class="sr-only">用户名</label>
-        <input type="text" id="username" name="username" class="form-control" placeholder="用户名" required="true" autofocus="true">
-        <label for="password" class="sr-only">Password</label>
-        <input type="password" id="password" name="password" class="form-control" placeholder="密码" required="true">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登    录</button>
-        <input type="hidden" name="_csrf" value="">
-    </form>
+<body>
+<h3>基础列表组</h3>
+<ul class="list-group">
+    <li class="list-group-item">揭开CSS3的面纱</li>
+    <li class="list-group-item">CSS3选择器</li>
+    <li class="list-group-item">CSS3边框</li>
+    <li class="list-group-item">CSS3背景</li>
+    <li class="list-group-item">CSS3文本</li>
+</ul>
+<h3>带徽章的列表组</h3>
+<ul class="list-group">
+    <li class="list-group-item">
+        <span class="badge">13</span>揭开CSS3的面
+    </li>
+    <li class="list-group-item">
+        <span class="badge">456</span>CSS3选择器
+    </li>
+    <li class="list-group-item">
+        <span class="badge">892</span>CSS3边框
+    </li>
+    <li class="list-group-item">
+        <span class="badge">90</span>CSS3背景
+    </li>
+    <li class="list-group-item">
+        <span class="badge">1290</span>CSS3文本
+    </li>
+</ul>
+<h3>带链接的列表组</h3>
+<ul class="list-group">
+    <li class="list-group-item">
+        <a href="##">揭开CSS3的面</a>
+    </li>
+    <li class="list-group-item">
+        <a href="##">CSS3选择器</a>
+    </li>
+    <li class="list-group-item">
+        <a href="##">CSS3边框</a>
+    </li>
+    <li class="list-group-item">
+        <a href="##">CSS3背景</a>
+    </li>
+    <li class="list-group-item">
+        <a href="##">CSS3文本</a>
+    </li>
+</ul>
+<h3>自定义列表组</h3>
+<div class="list-group">
+    <a href="##" class="list-group-item">
+        <h4 class="list-group-item-heading">图解CSS3</h4>
+        <p class="list-group-item-text">
+            详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性...</p>
+    </a>
+    <a href="##" class="list-group-item">
+        <h4 class="list-group-item-heading">Sass中国</h4>
+        <p class="list-group-item-text">致力于为中国开发者提供最全面，最具影响力，最前沿的Sass相关技术与教程...</p>
+    </a>
+</div>
+<h3>组合列表项的状态</h3>
+<div class="list-group">
+    <a href="##" class="list-group-item active"><span class="badge">5902</span>图解CSS3</a>
+    <a href="##" class="list-group-item"><span class="badge">15902</span>W3cplus</a>
+    <a href="##" class="list-group-item"><span class="badge">59020</span>慕课网</a>
+    <a href="##" class="list-group-item disabled"><span class="badge">0</span>Sass中国</a>
+</div>
+<h3>多彩列表组</h3>
+<div class="list-group">
+    <a href="##" class="list-group-item active"><span class="badge">5902</span>图解CSS3</a>
+    <a href="##" class="list-group-item list-group-item-success"><span class="badge">15902</span>W3cplus</a>
+    <a href="##" class="list-group-item list-group-item-info"><span class="badge">59020</span>慕课网</a>
+    <a href="##" class="list-group-item list-group-item-warning"><span class="badge">0</span>Sass中国</a>
+    <a href="##" class="list-group-item list-group-item-danger"><span class="badge">10</span>Mobile教程</a>
+</div>
+<script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
